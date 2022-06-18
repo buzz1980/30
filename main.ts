@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
-    antwoord = 0
-    if (antwoord == randint(0, 2)) {
+    antwoord = randint(0, 1)
+    if (antwoord == 0) {
         basic.showString("Nee")
     }
 })
