@@ -1,8 +1,14 @@
-input.onButtonPressed(Button.A, function () {
-    antwoord = randint(0, 1)
+input.onGesture(Gesture.Shake, function () {
+    antwoord = randint(0, 2)
     if (antwoord == 0) {
         basic.showString("Nee")
     }
+    if (antwoord == 1) {
+        basic.showString("Ja")
+    }
+    if (antwoord == 2) {
+        basic.showString("misschien")
+    }
 })
 let antwoord = 0
-basic.showString("Druk op A")
+basic.showString("schud mij")
